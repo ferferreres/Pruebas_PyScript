@@ -9,14 +9,6 @@
 </head>
 <body>
     <py-config src="./pyscript.toml"></py-config>
-    <p id = "csv"></p>
-    <py-script>
-        import pandas as pd
-
-        df = pd.read_csv('res/Dependencies.csv')
-
-        csv = Element('csv')
-        csv.write(df.shape)
-    </py-script>
+    <py-script src="./main.py"></py-script>
 </body>
 </html>
